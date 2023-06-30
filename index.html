@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter city here"
+                  class="form-control"
+                  id="search-city"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control col-3"
+                  id="search"
+                />
+              </div>
+              <div class="col-3">
+                <button id="current-city" class="btn btn-light" type="submit">
+                  Current City
+                </button>
+              </div>
+            </div>
+          </form>
+          <h1 id="city">Kota Kinabalu, Malaysia</h1>
+          <ul>
+            <li id="current-date">Thursday 3:00pm</li>
+            <li id="description">Mostly sunny</li>
+          </ul>
+          <div class="row">
+            <div class="col-9">
+              <div class="clearfix">
+                <img
+                  src="images/partly-cloudy.png"
+                  class="cloudy-icon float-left"
+                />
+                <span class="float-left">
+                  <span class="temperature" id="temperature">28</span
+                  ><span class="units">°C</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li>
+                  Humidity:<span id="humidity">50</span><span id="unit">%</span>
+                </li>
+
+                <li>
+                  Wind:<span id="wind">8</span><span id="unit">km/h</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <ul>
+                <li>
+                  <span class="day"> Fri </span><br />
+                  <img src="images/rain-lightning.png" /><br />
+                  <span class="daily-temp"><strong>29°C</strong> 24°C</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li>
+                  <span class="day"> Sat </span> <br />
+                  <img src="images/rain-lightning.png" /><br />
+                  <span class="daily-temp"><strong>29°C</strong> 23°C</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li>
+                  <span class="day"> Sun </span> <br />
+                  <img src="images/rain-lightning.png" /><br />
+                  <span class="daily-temp"><strong>32°C</strong> 23°C</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li>
+                  <span class="day"> Mon </span> <br />
+                  <img src="images/rain-lightning.png" /><br />
+                  <span class="daily-temp"><strong>33°C</strong> 24°C</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
