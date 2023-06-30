@@ -1,0 +1,54 @@
+.card {
+  display: block;
+  margin: 50px;
+  padding: 10px;
+  width: 650px;
+  font-family: arial, sans-serif;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+h1 {
+  color: #7c7c7c;
+  text-align: left;
+  font-size: 24px;
+  line-height: 20px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  color: #7c7c7c;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.cloudy-icon {
+  height: 64px;
+  width: 64px;
+}
+
+.temperature {
+  color: rgb(232, 234, 237);
+  font-size: 30px;
+}
+
+.units {
+  color: rgb(232, 234, 237);
+  font-size: 30px;
+}
+
+.day {
+  color: rgb(232, 234, 237);
+  text-align: center;
+}
+
+.daily-temp {
+  color: rgb(232, 234, 237);
+}
